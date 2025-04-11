@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope, FaArrowDown } from 'react-icons/fa';
+import profileImage from './assets/profile.jpg';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -37,7 +38,7 @@ function App() {
           <div className="flex flex-col md:flex-row lg:flex-row items-center gap-6 lg:gap-8">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-pink-200">
               <img 
-                src="/profile.jpg" 
+                src={profileImage}
                 alt="Yamini Ashokkumar" 
                 className="w-full h-full object-cover"
               />
