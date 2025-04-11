@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope, FaArrowDown } from 'react-icons/fa';
-import profileImage from './assets/profile.jpg';
+
+const PROFILE_IMAGE_URL = 'https://media.licdn.com/dms/image/v2/D5603AQFwBDBKzMdEVQ/profile-displayphoto-shrink_800_800/B56ZW6xj7vGsAc-/0/1742595310678?e=1749686400&v=beta&t=C6f_LFRpMyV9mlSDRxOajK_yHn3XzfYMapKr28Sq3CQ'; // You'll need to replace this with your actual image URL
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -38,7 +39,7 @@ function App() {
           <div className="flex flex-col md:flex-row lg:flex-row items-center gap-6 lg:gap-8">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-pink-200">
               <img 
-                src={profileImage}
+                src={PROFILE_IMAGE_URL}
                 alt="Yamini Ashokkumar" 
                 className="w-full h-full object-cover"
               />
